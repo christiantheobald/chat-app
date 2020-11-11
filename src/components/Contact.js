@@ -1,22 +1,24 @@
-import React from 'react';
-import './Style.css';
+import React from "react";
+import "./Contact.css";
 
-const name = "jessica";
-const avatar = "https://randomuser.me/api/portraits/women/95.jpg";
-const online = true;
-
-    function Contact() {
-    return (
-        <div className='Contact'>
-            <img className ="avatar" src={avatar} alt=""></img>
-            <div className="name">{name}</div>
-            <p className="status" >{online ? "online" : "offline"}</p>
-            
-
-
+function Contact() {
+  return (
+    <div className="Contact">
+      <img
+        className="avatar"
+        src="https://randomuser.me/api/portraits/men/85.jpg"
+        alt="Peter Palmer"
+      />
+      <div>
+        <p className="name">Peter Palmer</p>
+        <div className="status">
+          <div className="status-online" />
+          <p className="status-text">online</p>
         </div>
-    )
-    
-    }
-
-    export default Contact;
+      </div>
+     
+     
+    </div>
+  );
+}
+export default Contact;
